@@ -149,7 +149,10 @@ jobs:
             const sanitizedDriverName = driverName.replace(/[^a-zA-Z0-9_]/g, '_');
             
             await github.rest.issues.createComment({
-              updated  `
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue_number,
+              body: `Updated`
             });
             await github.rest.issues.update({
               owner: context.repo.owner,
