@@ -1,6 +1,6 @@
 {
   "driver_name": "DC_PWR",
-  "version": "1.0.0.1",
+  "version": "1.0.0.2",
   "instrument_model": "model",
   "manufacturer": "Keysight"
 }
